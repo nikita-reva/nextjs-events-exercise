@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import AddressIcon from '../icons/AddressIcon';
 import ArrowRightIcon from '../icons/ArrowRightIcon';
@@ -19,7 +20,7 @@ function EventItem({ event }) {
 
   return (
     <li className={classes.item}>
-      <img src={'/' + image} alt="" />
+      <Image src={'/' + image} alt={title} width={250} height={160} />
       <div className={classes.content}>
         <div className={classes.summary}>
           <h2>{title}</h2>
